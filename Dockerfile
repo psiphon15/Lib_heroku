@@ -25,5 +25,7 @@ ENV PATH="/usr/src/app/.local/bin:${PATH}"
 
 COPY . .
 
+EXPOSE 80
+
 RUN chmod +x ./.bin/setup.sh ./.bin/start.sh
 RUN ./.bin/setup.sh
